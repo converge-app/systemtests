@@ -1,0 +1,51 @@
+\chapter{Systemtest Epic 3}
+Epic 3 har følgende formulering:
+
+Som en Freelancer ønsker jeg at arbejde med en employer, så jeg kan få lavet noget arbejde og derved modtage penge
+nedenfor ses teabellen over epic 3.
+
+\begin{table}[H]
+    \centering
+    \caption{User stories for epic 3}
+    \label{tab:us-epic3}
+    \begin{tabular}{p{1cm}|p{2cm}|p{6cm}|p{6cm}}
+        \textbf{Krav nr.} & \textbf{Som} & \textbf{ønsker jeg}                             & \textbf{for at}                  \\
+        \hline
+        3.1               & Freelancer   & at kunne byde på et projekt                     & få noget arbejde                 \\
+        \hline
+        3.2               & Freelancer   & at kunne slette min anmodning                   & fortyde                          \\
+        \hline
+        3.3               & Freelancer   & at kunne kommentere på et projekt               & for at give min mening           \\
+        \hline
+        3.4               & Freelancer   & at kunne uploade og modtage materiale           & for at have noget at arbejde med \\
+        \hline
+        3.5               & Freelancer   & at kunne se employers profil                    & for at få konfidens i udbyderen  \\
+        \hline
+        3.6               & Freelancer   & at kunne modtage betaling i bytte for materiale & for at fuldføre transkationen    \\
+    \end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+	\centering
+	\caption{Systemtests for epic 3}
+	\begin{tabular}{L{25pt}|L{150pt}|L{70pt}|L{100pt}|L{75pt}}
+		\hline
+		\textbf{Step} & \textbf{Handling} & \textbf{Teknisk} & \textbf{Forventet resultat} & \textbf{Faktisk resultat} \\
+		\hline
+		1 & Step 1 og 2 udføres fra systemtest epic 1. Fra Dashboard trykker på ''Find a Project''\textsuperscript{[7]} på Webapplikationens Dashboard, sendes videre til at ''Categories'' siden og finde kategorie efter eget ønske, Indtaster herfra valide bud\textsuperscript{[8]} og tryk herefter på knappen ''BID''. & I databasen slås der op i ''Bid table'' & Det ses at database-tabellen ''Bid table'' indeholder de indtastede oplysninger. & \\
+		\hline
+		2 & step 1 udeføres fra epic 2 og Freelancer øsnker og slette sit bud. Herefter trykkes på knappen ”Delete Bid” hvorefter der trykkes ”Yes” &  I databasen slås der op i ''Bid table'' & Det ses at database-tabellen ''Bid table'' at det ikke længere eksisterer. & \\
+		\hline
+		3 & Employer trykker på knappen ”My projects”\textsuperscript{[5]} på Webapplikationens Dashboard. Herefter trykkes på knappen ”Edit project” hvorefter der indtastes nye oplysninger\textsuperscript{[6]} &  I databasen slås der op i ''Project table'' & Det ses at database-tabellen ''Project table'' at de nye oplysninger er ændret. & \\
+		\hline
+		4 & Freelancer trykker på knappen ”Upload file”. Uploader herfra en valide fil eller modtage en valide fil som indeholder materiale &  I databasen slås der op i ''File table'' & Det ses at database-tabellen ''File table'' indeholder valgte fil & \\
+		\hline
+		5 & Freelancer Freelancer har trykket sig ind på siden ''Profile''og kan se Employers profil  & & Det ses at Freelancer er sendt til Employers profil & \\
+		\hline
+		6 & Freelancer kan modtage og indbetale penge via betaling system stripe & & Freelancer har modtaget beløbet for sit arbejde & \\
+		\hline
+		
+	\end{tabular}
+\end{table}

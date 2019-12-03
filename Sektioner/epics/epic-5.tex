@@ -1,0 +1,41 @@
+\section{Epic 5}
+Epic 5 har følgende formulering:
+
+Som en bruger kan jeg søge, så jeg kan finde hvad jeg leder efter.
+nedenfor ses teabellen over epic 5.
+
+
+\begin{table}[H]
+    \centering
+    \caption{User stories for epic 5}
+    \label{tab:us-epic6}
+    \begin{tabular}{p{1cm}|p{2cm}|p{6cm}|p{6cm}}
+        \textbf{Krav nr.} & \textbf{Som} & \textbf{ønsker jeg}           & \textbf{for at}                     \\
+        \hline
+        5.1               & Bruger       & at kunne søge med nogle ord   & finde den ting jeg leder efter      \\
+        \hline
+        5.2               & Bruger       & at kunne filtrere med genre   & indskræke et område jeg leder efter \\
+        \hline
+        5.3               & Bruger       & at kunne slette mine filtrere & søge forfra                         \\
+    \end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+	\centering
+	\caption{Systemtests for epic 5}
+	\begin{tabular}{L{25pt}|L{150pt}|L{70pt}|L{100pt}|L{75pt}}
+		\hline
+		\textbf{Step} & \textbf{Handling} & \textbf{Teknisk} & \textbf{Forventet resultat} & \textbf{Faktisk resultat} \\
+		\hline
+		1 & step 1 skal udføres fra systemtest epic 1. brugeren har trykket sig ind på siden ”Categories” via knappen ”Find a project” på dashboard, herfra indtastes et valid nøgle ord\textsuperscript{[11]} som brugeren ønsker og søge efter.& &  Der sker en filtrering efter det søgte nøgle ord.& \\
+		\hline
+		2 & brugeren har trykket sig ind på siden ”Categories” via knappen ”Find a project” på dashboard, herfra filtrere med genre.& &  Der sker en filtrering efter det valgte genre.& \\
+		\hline
+		3 & Step 1 skal udføres for systemtest epic 5. Herfra kan slette filtrering.& &  filtrering bliver fjernet.& \\
+		\hline
+		
+		
+	\end{tabular}
+\end{table}

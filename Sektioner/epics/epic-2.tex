@@ -1,0 +1,61 @@
+
+\chapter{Systemtest Epic 2}
+Epic 2 har følgende formulering:
+
+Som en Employer ønsker jeg at arbejde med en freelancer, så jeg kan få lavet noget ønsket arbejde
+nedenfor ses teabellen over epic 2.
+
+
+\begin{table}[H]
+    \centering
+    \caption{User stories for epic 2}
+    \label{tab:us-epic2}
+    \begin{tabular}{p{1cm}|p{2cm}|p{6cm}|p{6cm}}
+        \textbf{Krav nr.} & \textbf{Som} & \textbf{ønsker jeg}                        & \textbf{for at}                                                                                     \\
+        \hline
+        2.1               & Employer     & at kunne oprette et projekt                & få freelancers opmørksomhed og løst en opgave                                                       \\
+        \hline
+        2.2               & Employer     & at kunne slette et projekt                 & \multicolumn{1}{p{6cm}}{slette mit opslag fordi jeg har fortryd, eller det ikke længere er gyldigt} \\
+        \hline
+        2.3               & Employer     & at kunne redigere mit opslag               & ændre mine krav                                                                                     \\
+        \hline
+        2.4               & Employer     & at kunne vælge en freelancer               & få det bedste resultat og gå igang                                                                  \\
+        \hline
+        2.5               & Employer     & at kunne se kvalifikationer på freelancer  & få den mest kvalificerede freelancer                                                                \\
+        \hline
+        2.6               & Employer     & at kunne uploade forskellige dokumenter    & give freelancere materiale at arbejde med                                                           \\
+        \hline
+        2.7               & Employer     & at kunne modtage resultater                & fuldføre jobbet                                                                                     \\
+        \hline
+        2.8               & Employer     & at betale det, det koster at få materialet & for at fuldføre transaktionen                                                                       \\
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[H]
+	\centering
+	\caption{Systemtests for epic 2}
+	\begin{tabular}{L{25pt}|L{150pt}|L{70pt}|L{100pt}|L{75pt}}
+		\hline
+		\textbf{Step} & \textbf{Handling} & \textbf{Teknisk} & \textbf{Forventet resultat} & \textbf{Faktisk resultat} \\
+		\hline
+		1 & Step 1 og 2 udføres fra systemtest epic 1. Fra Dashboard trykker på ''Create a Project''\textsuperscript{[3]}, sendes videre til at ''Create'' siden, Indtaster herfra valide oplysninger\textsuperscript{[4]} og tryk herefter på knappen ''CREATE''. & I databasen slås der op i ''Project table'' & Det ses at database-tabellen ''Project table'' indeholder de indtastede oplysninger. & \\
+		\hline
+		2 & Employer trykker på knappen ”My projects” \textsuperscript{[5]} på Webapplikationens Dashboard. Herefter trykkes på knappen ”Delete project” hvorefter der trykkes ”Yes” &  I databasen slås der op i ''Project table'' & Det ses at database-tabellen ''Project table'' at det ikke længere eksisterer. & \\
+		\hline
+		3 & Employer trykker på knappen ”My projects”\textsuperscript{[5]} på Webapplikationens Dashboard. Herefter trykkes på knappen ”Edit project” hvorefter der indtastes nye oplysninger\textsuperscript{[6]} &  I databasen slås der op i ''Project table'' & Det ses at database-tabellen ''Project table'' at de nye oplysninger er ændret. & \\
+		\hline
+		4 & Employer trykker på knappen ”My projects” på Webapplikationens Dashboard. Herefter kan der ses de forskellige bud og trykkes på knappen ”CHOOSE” hvorefter Employer vælger en freelancer efter eget ønske & & Det ses at brugeren er sendt til Collaboration siden & \\
+		\hline
+		5 & Employer trykker på knappen ”My projects” på Webapplikationens Dashboard. Herefter ønsker Employer og se freelancers profil og kvalifikationer & & Det ses at Employer er sendt til freelancers profil & \\
+		\hline
+		6 & Employer trykker på knappen ”Upload file”. Uploader herfra en valide fil  &  I databasen slås der op i ''File table'' & Det ses at database-tabellen ''File table'' indeholder valgte fil & \\
+		\hline
+		7 & Employer kan modtage resultater i form af valide filer.  & &  Modtaget resultater& \\
+		\hline
+		8 & Employer trykker på knappen ”Pay”. Indtaster et valide beløb, herfra sker betaling via stripe & & Freelancer har modtaget beløbet for sit arbejde & \\
+		\hline
+		
+	\end{tabular}
+\end{table}

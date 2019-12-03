@@ -1,0 +1,413 @@
+\section{Epic 1}
+Epic 1 har følgende formulering: 
+Som en bruger ønsker jeg at logge på, så jeg kan tilgå systemet.
+Som en bruger ønsker jeg at kunne registreres, så jeg kan oprettes i systemet.
+nedenfor ses teabellen over epic 1.
+
+\begin{table}[H]
+    \centering
+    \caption{User stories for epic 1}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{1cm}|p{2cm}|p{6cm}|p{6cm}}
+        \textbf{Krav nr.} & \textbf{Som} & \textbf{ønsker jeg}                      & \textbf{for at}                          \\
+        \hline
+        1.1               & bruger       & at logge ind                             & tilgå systemet                           \\
+        \hline
+		\sout{1.2}               & \sout{bruger}       & \sout{at bliver registreret}                    & \sout{blive oprettet i systemet}   \\
+        \hline
+        1.3               & bruger       & at kunne logge ind med google            & nemt kunne logge ind                     \\
+        \hline
+        1.4               & bruger       & at kunne indtaste personlige oplysninger & få et mere målrettet system oplevelse    \\
+		\hline
+     	\sout{1.5}        & \sout{bruger}       & \sout{at kunne slette min konto}  & \sout{ikke længere være en del af systemet}  \\ 
+        \hline
+		\sout{1.6}        & \sout{bruger}        & \sout{at kunne skifte mit kodeord}              & \sout{sikre min konto}           \\
+        \hline
+        \sout{1.7}        & \sout{bruger}        & \sout{gendande mit kodeord}                     & \sout{få adgang til min konti igen}             \\
+        \hline
+        \sout{1.8}        & \sout{bruger}        & \sout{at kunne ændre i mine oplysninger}        & \sout{min profil stemmer overens med mig}       \\
+        \hline
+        \sout{1.9}        & \sout{bruger}        & \sout{at logge ind automatisk}           & \sout{ikke skulle skrive mit kodeord hver gang} \\
+    \end{tabular}
+\end{table}
+
+\subsection{User Story 1.1}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster invalid email\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Email: samirtester
+                    \item Password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Login'' via knappen ''Login'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet invalid email.\\
+        \hline
+        Når & brugeren trykker på knappen ''Login''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster Mangler email\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Email: 
+                    \item Password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Login'' via knappen ''Login'' på forsiden.\\
+        \hline
+        og & brugeren har ikke indtastet email.\\
+        \hline
+        Når & brugeren trykker på knappen ''Login''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster for kort password\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Email:samir@hotmail.dk
+                    \item Password: samr
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Login'' via knappen ''Login'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet for kort password.\\
+        \hline
+        Når & brugeren trykker på knappen ''Login''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster ikke noget password\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Email:samir@hotmail.dk
+                    \item Password: 
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Login'' via knappen ''Login'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet ikke noget password.\\
+        \hline
+        Når & brugeren trykker på knappen ''Login''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster valid oplysninger\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Email:samir@hotmail.dk
+                    \item Password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Login'' via knappen ''Login'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet valid oplysninger.\\
+        \hline
+        Når & brugeren trykker på knappen ''Login''\\
+        \hline
+        så & vises dashboard siden frem.\\
+        \hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\subsection{User Story 1.2}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.2}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster invalid fornavn\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Name: 
+					\item Lastname: Habibi
+					\item Email:samir@hotmail.dk
+                    \item Password: samir1234
+                    \item Confirm password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Register'' via knappen ''Register'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet invalid fornavn.\\
+        \hline
+        Når & brugeren trykker på knappen ''Register''\\
+        \hline
+        så & vises en fejl.\\
+        \hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.2}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster invalid efternavn\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Name: Samir
+					\item Lastname: 
+					\item Email:samir@hotmail.dk
+                    \item Password: samir1234
+                    \item Confirm password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Register'' via knappen ''Register'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet invalid efternavn.\\
+        \hline
+        Når & brugeren trykker på knappen ''Register''\\
+        \hline
+        så & vises en fejl.\\
+        \hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.2}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster invalid email\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Name: Samir
+					\item Lastname: Habibi
+					\item Email:samirotmail.dk
+                    \item Password: samir1234
+                    \item Confirm password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Register'' via knappen ''Register'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet invalid email.\\
+        \hline
+        Når & brugeren trykker på knappen ''Register''\\
+        \hline
+        så & vises en fejl.\\
+        \hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.2}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster ikke email\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Name: Samir
+					\item Lastname: Habibi
+					\item Email:
+                    \item Password: samir1234
+                    \item Confirm password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Register'' via knappen ''Register'' på forsiden.\\
+        \hline
+        og & brugeren har ikke indtastet noget email.\\
+        \hline
+        Når & brugeren trykker på knappen ''Register''\\
+        \hline
+        så & vises en fejl.\\
+        \hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.2}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster for kort password\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Name: Samir
+					\item Lastname: Habibi
+					\item Email:samir@hotmail.dk
+                    \item Password: sam
+                    \item Confirm password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Register'' via knappen ''Register'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet for kort password.\\
+        \hline
+        Når & brugeren trykker på knappen ''Register''\\
+        \hline
+        så & vises en fejl.\\
+        \hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.2}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster ikke samme password\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Name: Samir
+					\item Lastname: Habibi
+					\item Email:samir@hotmail.dk
+                    \item Password: samir12345
+                    \item Confirm password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Register'' via knappen ''Register'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet ikke samme password.\\
+        \hline
+        Når & brugeren trykker på knappen ''Register''\\
+        \hline
+        så & vises en fejl.\\
+        \hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.2}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster ikke noget password\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Name: Samir
+					\item Lastname: Habibi
+					\item Email:samir@hotmail.dk
+                    \item Password: 
+                    \item Confirm password: 
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Register'' via knappen ''Register'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet ikke noget password.\\
+        \hline
+        Når & brugeren trykker på knappen ''Register''\\
+        \hline
+        så & vises en fejl.\\
+        \hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 1.2}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Brugeren indtaster valid oplysninger\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Name: Samir
+					\item Lastname: Habibi
+					\item Email:samir@hotmail.dk
+                    \item Password: samir1234
+                    \item Confirm password: samir1234
+				\end{itemize}} \\
+		\hline
+		Givet at & brugeren har trykket sig ind på siden ''Register'' via knappen ''Register'' på forsiden.\\
+        \hline
+        og & brugeren har indtastet valid oplysning.\\
+        \hline
+        Når & brugeren trykker på knappen ''Register''\\
+        \hline
+        så & bliver brugeren navigeret til ''Login'' siden.\\
+        \hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}

@@ -1,0 +1,47 @@
+\chapter{Systemtest Epic 1}
+Epic 1 har følgende formulering: 
+Som en bruger ønsker jeg at logge på, så jeg kan tilgå systemet.
+Som en bruger ønsker jeg at kunne registreres, så jeg kan oprettes i systemet.
+nedenfor ses teabellen over epic 1.
+
+\begin{table}[H]
+    \centering
+    \caption{User stories for epic 1}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{1cm}|p{2cm}|p{6cm}|p{6cm}}
+        \textbf{Krav nr.} & \textbf{Som} & \textbf{ønsker jeg}                      & \textbf{for at}                          \\
+        \hline
+        1.1               & bruger       & at logge ind                             & tilgå systemet                           \\
+        \hline
+        1.2               & bruger       & at bliver registreret                    & blive oprettet i systemet                \\
+        \hline
+        \sout{1.3}        & bruger       & \sout{at kunne logge ind med google}            & \sout{nemt kunne logge ind}        \\
+        \hline
+        1.4               & bruger       & at kunne indtaste personlige oplysninger & få et mere målrettet system oplevelse    \\
+		\hline
+     	\sout{1.5}        & \sout{bruger}       & \sout{at kunne slette min konto}  & \sout{ikke længere være en del af systemet}  \\ 
+        \hline
+		\sout{1.6}        & \sout{bruger}        & \sout{at kunne skifte mit kodeord}              & \sout{sikre min konto}           \\
+        \hline
+        \sout{1.7}        & \sout{bruger}        & \sout{gendande mit kodeord}                     & \sout{få adgang til min konti igen}             \\
+        \hline
+        \sout{1.8}        & \sout{bruger}        & \sout{at kunne ændre i mine oplysninger}        & \sout{min profil stemmer overens med mig}       \\
+        \hline
+        \sout{1.9}        & \sout{bruger}        & \sout{at logge ind automatisk}           & \sout{ikke skulle skrive mit kodeord hver gang} \\
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Systemtests for epic 1}
+	\begin{tabular}{L{25pt}|L{150pt}|L{70pt}|L{100pt}|L{75pt}}
+		\hline
+		\textbf{Step} & \textbf{Handling} & \textbf{Teknisk} & \textbf{Forventet resultat} & \textbf{Faktisk resultat} \\
+		\hline
+		1 & Åben Webapplikationen og til forsiden ''Homepage''\textsuperscript{[1]}. trykker på ''Signup'', navigeres videre til registrering siden Indtast herfra valide oplysninger\textsuperscript{[2]} og tryk herefter på knappen ''Register''. & I databasen slås der op i ''User table'' & Det ses at database-tabellen ''User table'' indeholder de indtastede oplysninger. & \\
+		\hline
+		2 & Efter registrering bliver brugeren sendt til Login siden. I login siden felter indtastes valide loginoplysninger hvorefter der trykkes på knappen ''Log In'' &  & Det ses at brugeren er sendt til Dashboard & \\
+		\hline
+	\end{tabular}
+\end{table}
